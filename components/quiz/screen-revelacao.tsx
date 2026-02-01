@@ -73,6 +73,17 @@ export function ScreenRevelacao({ onNext }: ScreenRevelacaoProps) {
         Nenhuma delas existe. Ambas foram criadas do zero com inteligência artificial.
       </p>
 
+      <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
+        <Image
+          src="/images/luis.png"
+          alt="Luis"
+          width={400}
+          height={400}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
+
       {/* Highlight Block */}
       <div className="w-full bg-[#00FF88]/10 border-l-[3px] border-[#00FF88] rounded-lg p-4 mb-8 text-left">
         <p className="text-white leading-relaxed">
@@ -80,6 +91,9 @@ export function ScreenRevelacao({ onNext }: ScreenRevelacaoProps) {
           <span className="text-[#00FF88] font-semibold">$200</span> em parcerias. Imagina em 3 meses.
         </p>
       </div>
+
+      {/* Luis Image */}
+
 
       {/* Button */}
       <PrimaryButton onClick={onNext}>

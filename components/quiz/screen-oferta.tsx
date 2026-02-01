@@ -2,6 +2,7 @@
 
 import { Check, Shield, Lock, Zap } from "lucide-react"
 import { PrimaryButton } from "./primary-button"
+import Image from "next/image"
 
 export function ScreenOferta() {
   const comparison = [
@@ -12,12 +13,12 @@ export function ScreenOferta() {
   ]
 
   const deliverables = [
-    "Método passo a passo",
-    "Biblioteca de prompts testados",
-    "Guia de ferramentas gratuitas e pagas",
-    "Templates de abordagem para marcas",
-    "Acesso à comunidade privada",
-    "Atualizações vitalícias"
+    "Treinamento completo, rápido e prático, com técnicas avançadas e zero enrolação, tudo direto ao ponto",
+    "Acesso às nossas IAs que criam prompts profissionais para agilizar seu trabalho",
+    "Material de apoio completo, com prompts prontos para você copiar e colar",
+    "Acesso a templates de vídeos virais para replicar em poucos cliques",
+    "Mini curso bônus de edição rápida para deixar seus vídeos mais profissionais",
+    "Treinamento bônus para criar roteiros virais usando IA em segundos"
   ]
 
   return (
@@ -53,9 +54,28 @@ export function ScreenOferta() {
       </div>
 
       {/* Section 2 - Product */}
+      {/* Badge */}
+      <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#00FF88]/20 to-[#00D4FF]/20 border border-[#00FF88]/30 mb-4">
+        <span className="text-[13px] font-bold text-[#00FF88] uppercase tracking-[0.12em]">
+          🎁 Acesso Imediato e Vitalício
+        </span>
+      </div>
+
       <h3 className="font-heading text-xl font-bold text-white mb-6 relative">
-        Acesso completo ao método:
+        O que você vai receber?
       </h3>
+
+      {/* Image */}
+      <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700">
+        <Image
+          src="/images/exame.jpeg"
+          alt="Conteúdo do treinamento"
+          width={400}
+          height={400}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
 
       {/* Deliverables */}
       <div className="w-full space-y-3 mb-8 relative">
@@ -115,7 +135,7 @@ export function ScreenOferta() {
       </PrimaryButton>
 
       {/* Section 4 - Guarantee */}
-      <div className="w-full glass rounded-xl p-4 mb-6 relative">
+      <div className="w-full glass rounded-xl p-4 mb-8 relative">
         <div className="flex items-start gap-3 text-left">
           <div className="w-10 h-10 rounded-full bg-[#00FF88]/10 flex items-center justify-center shrink-0">
             <Shield className="w-5 h-5 text-[#00FF88]" />
@@ -124,6 +144,65 @@ export function ScreenOferta() {
             <h4 className="text-white font-semibold mb-1">Garantia de 7 dias</h4>
             <p className="text-[#8A8A8E] text-sm leading-relaxed">
               Acesse tudo, teste o método. Se não fizer sentido pra você, devolvo 100% do valor. Sem perguntas, sem burocracia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 5 - FAQ */}
+      <div className="w-full mb-8 relative">
+        <h3 className="font-heading text-2xl font-bold text-white mb-6 text-center">
+          Dúvidas Frequentes
+        </h3>
+
+        <div className="space-y-4">
+          {/* FAQ Item 1 */}
+          <div className="w-full glass rounded-xl p-5 text-left">
+            <h4 className="text-white font-semibold mb-2 text-[15px]">
+              O que exatamente é esse treinamento?
+            </h4>
+            <p className="text-[#8A8A8E] text-sm leading-relaxed">
+              É um treinamento completo do zero que ensina, passo a passo, como criar Influencers de IA realistas, gerar conteúdos e vídeos prontos e usar isso para viralizar e monetizar. É método prático, não teoria.
+            </p>
+          </div>
+
+          {/* FAQ Item 2 */}
+          <div className="w-full glass rounded-xl p-5 text-left">
+            <h4 className="text-white font-semibold mb-2 text-[15px]">
+              Preciso gastar com IA para criar minha Influencer?
+            </h4>
+            <p className="text-[#8A8A8E] text-sm leading-relaxed">
+              Não. Você não precisa gastar nada para criar sua Influencer de IA. Mostramos como usar IAs gratuitas para gerar sua Influencer do zero e, além disso, apresentamos ferramentas profissionais para quem quiser escalar depois. Você começa sem investimento e evolui quando fizer sentido.
+            </p>
+          </div>
+
+          {/* FAQ Item 3 */}
+          <div className="w-full glass rounded-xl p-5 text-left">
+            <h4 className="text-white font-semibold mb-2 text-[15px]">
+              Em quanto tempo eu crio minha Influencer de IA?
+            </h4>
+            <p className="text-[#8A8A8E] text-sm leading-relaxed">
+              Em menos de 10 minutos, você já sai com sua Influencer de IA criada e pronta para uso. Nada de semanas estudando. É resultado imediato.
+            </p>
+          </div>
+
+          {/* FAQ Item 4 */}
+          <div className="w-full glass rounded-xl p-5 text-left">
+            <h4 className="text-white font-semibold mb-2 text-[15px]">
+              Preciso saber algo sobre IA, edição ou marketing?
+            </h4>
+            <p className="text-[#8A8A8E] text-sm leading-relaxed">
+              Não. O treinamento foi criado para quem está começando do absoluto zero. Sem programação, sem edição avançada e sem linguagem técnica. Você só segue, aplica e executa.
+            </p>
+          </div>
+
+          {/* FAQ Item 5 */}
+          <div className="w-full glass rounded-xl p-5 text-left">
+            <h4 className="text-white font-semibold mb-2 text-[15px]">
+              Dá mesmo para viralizar ou ganhar dinheiro com isso?
+            </h4>
+            <p className="text-[#8A8A8E] text-sm leading-relaxed">
+              Sim. Influencers de IA já estão viralizando agora e sendo usadas para vendas, monetização, parcerias e tráfego. Mostramos como entrar antes da saturação e transformar atenção em dinheiro.
             </p>
           </div>
         </div>

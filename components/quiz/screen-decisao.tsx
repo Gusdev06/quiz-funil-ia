@@ -1,6 +1,6 @@
 "use client"
 
-import { Check, Users } from "lucide-react"
+import { Check } from "lucide-react"
 import { PrimaryButton } from "./primary-button"
 
 interface ScreenDecisaoProps {
@@ -9,9 +9,9 @@ interface ScreenDecisaoProps {
 
 export function ScreenDecisao({ onNext }: ScreenDecisaoProps) {
   const objections = [
-    "Você não saiba nada de IA",
-    "Nunca tenha editado uma imagem",
-    "Esteja começando do absoluto zero"
+    "Não precisa saber IA — eu te ensino do zero",
+    "Não precisa saber editar — mostro o passo a passo",
+    "Não precisa de experiência — só precisa começar"
   ]
 
   return (
@@ -21,12 +21,14 @@ export function ScreenDecisao({ onNext }: ScreenDecisaoProps) {
 
       {/* Title */}
       <h2 className="font-heading text-[26px] md:text-[28px] font-bold tracking-[-0.02em] mb-4 text-white text-balance relative">
-        Eu compilei tudo em um método direto ao ponto.
+        Eu já fiz o trabalho duro por você.
       </h2>
 
       {/* Subtitle */}
       <p className="text-[#8A8A8E] text-base leading-relaxed mb-8 relative">
-        Pra você criar sua influenciadora do zero — mesmo que:
+        Testei dezenas de ferramentas. Errei. Ajustei. Até achar o caminho.
+        <br /><br />
+        Agora tá tudo num método simples:
       </p>
 
       {/* Objections List */}
@@ -50,13 +52,12 @@ export function ScreenDecisao({ onNext }: ScreenDecisaoProps) {
 
       {/* Scarcity note */}
       <div className="flex items-center gap-2 text-[#8A8A8E] text-sm mb-8 relative">
-        <Users className="w-4 h-4" />
-        <span>Vagas limitadas para suporte individual</span>
+        <span>🔐 Suporte individual só enquanto eu der conta</span>
       </div>
 
       {/* Question */}
       <h3 className="font-heading text-2xl font-bold text-white mb-6 relative">
-        Você quer?
+        Você quer criar a sua?
       </h3>
 
       {/* Button */}
@@ -66,7 +67,7 @@ export function ScreenDecisao({ onNext }: ScreenDecisaoProps) {
 
       {/* Micro text */}
       <p className="text-white/40 text-xs mt-4">
-        Clique para ver a oferta especial
+        Ver oferta especial →
       </p>
     </div>
   )

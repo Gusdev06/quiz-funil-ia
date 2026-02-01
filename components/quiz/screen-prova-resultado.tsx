@@ -2,6 +2,7 @@
 
 import { PrimaryButton } from "./primary-button"
 import { useEffect } from "react"
+import Image from "next/image"
 
 
 interface ScreenProvaResultadoProps {
@@ -26,18 +27,37 @@ export function ScreenProvaResultado({ onNext }: ScreenProvaResultadoProps) {
       {/* Badge */}
       <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-[#00FF88]/15 mb-6">
         <span className="text-[11px] font-semibold text-[#00FF88] uppercase tracking-[0.1em]">
-          Case Real
+          DINHEIRO REAL
         </span>
       </div>
 
       {/* Title */}
-      <h2 className="font-heading text-[28px] font-bold tracking-[-0.02em] mb-4 text-white">
-        <span className="gradient-text">U$500</span> por um único vídeo.
+      <h2 className="font-heading text-[28px] font-bold tracking-[-0.02em] mb-2 text-white">
+        <span className="gradient-text">U$653</span> por um único vídeo.
       </h2>
+
+      {/* Subtitle */}
+      <p className="text-[#8A8A8E] text-base mb-6">
+        E eu não precisei aparecer.
+      </p>
+
+      {/* Image */}
+      <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
+        <Image
+          src="/images/IMG_2824.jpeg"
+          alt="Prova de resultado"
+          width={400}
+          height={400}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
 
       {/* Description */}
       <p className="text-[#8A8A8E] text-base leading-relaxed mb-6 max-w-[360px]">
-        Uma marca internacional  pagou isso para a Olivia por um vídeo de 10 segundos. Eu não gravei. Não apareci. Não saí de casa.
+        Uma marca gringa pagou isso por um vídeo de 10 segundos da Olivia.
+        <br /><br />
+        Eu criei ela. Eu fiz o vídeo. Mas quem apareceu foi ela.
       </p>
 
       {/* Divider */}
@@ -45,7 +65,7 @@ export function ScreenProvaResultado({ onNext }: ScreenProvaResultadoProps) {
 
       {/* Highlight text */}
       <p className="text-white font-semibold text-lg mb-8">
-        A Olivia fez tudo.
+        Sem câmera no meu rosto. Sem vergonha. Só resultado.
       </p>
 
       {/* Video Player */}

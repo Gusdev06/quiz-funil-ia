@@ -12,7 +12,7 @@ export function ScreenEntrada({ onNext }: ScreenEntradaProps) {
   useEffect(() => {
     // Load the vturb player script
     const script = document.createElement("script")
-    script.src = "https://scripts.converteai.net/8961d838-aff2-4dce-9b39-e84022d332ce/players/697f7ab5fa239aff03b3c0bd/v4/player.js"
+    script.src = "https://scripts.converteai.net/8961d838-aff2-4dce-9b39-e84022d332ce/players/697f8cbb1385ff513705f870/v4/player.js"
     script.async = true
     document.head.appendChild(script)
 
@@ -41,22 +41,23 @@ export function ScreenEntrada({ onNext }: ScreenEntradaProps) {
       </div>
 
       {/* Main Title */}
-      <h1 className="font-heading text-[28px] md:text-[36px] font-bold leading-tight tracking-[-0.02em] mb-4 text-balance">
-        Crie uma{" "}
-        <span className="gradient-text">influenciadora de IA</span>{" "}
-        que vende por você — sem aparecer, sem gravar, sem complicação.
+      <h1 className="font-heading text-[28px] md:text-[36px] font-bold leading-tight tracking-[-0.02em] mb-4 text-balance max-w-[500px]">
+        Daqui a 1 ano, todo mundo vai usar{" "}
+        <span className="gradient-text">IA</span>{" "}
+        pra criar conteúdo. A diferença é{" "}
+        <span className="gradient-text">quem começou hoje</span>.
       </h1>
 
       {/* Subtitle */}
       <p className="text-[#8A8A8E] text-base leading-relaxed mb-8 max-w-[400px]">
-        O método exato para criar modelos hiper-realistas que geram conteúdo, fecham parcerias e faturam — enquanto você só assiste.
+        Crie uma influenciadora de IA que vende por você — sem aparecer, sem gravar, sem complicação.
       </p>
 
       {/* VSL Video */}
       <div className="w-full max-w-[400px] mb-8">
         <div
           dangerouslySetInnerHTML={{
-            __html: `<vturb-smartplayer id="vid-697f7ab5fa239aff03b3c0bd" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>`
+            __html: `<vturb-smartplayer id="vid-697f8cbb1385ff513705f870" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer>`
           }}
         />
       </div>
