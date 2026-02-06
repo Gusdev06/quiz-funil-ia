@@ -112,8 +112,8 @@ export function ScreenOferta() {
           {/* Final price */}
           <div className="flex flex-col items-center justify-center mb-4">
             <div className="flex items-end gap-2 leading-none">
-              <span className="text-white text-xl mb-4 font-medium">10x de</span>
-              <span className="font-mono text-[56px] md:text-[64px] font-bold gradient-text">R$9,70</span>
+              <span className="text-white text-xl mb-4 font-medium">11x de</span>
+              <span className="font-mono text-[56px] md:text-[64px] font-bold gradient-text">R$11,29</span>
             </div>
             <span className="text-[#8A8A8E] text-sm font-medium">ou R$ 97,00 à vista</span>
           </div>
