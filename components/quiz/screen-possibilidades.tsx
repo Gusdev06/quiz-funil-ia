@@ -32,7 +32,7 @@ export function ScreenPossibilidades({ onNext }: ScreenPossibilidadesProps) {
     <div className="flex flex-col items-center text-center animate-in fade-in slide-in-from-bottom-4 duration-500">
       {/* Title */}
       <h2 className="font-heading text-[26px] md:text-[28px] font-bold tracking-[-0.02em] mb-4 text-white text-balance">
-        O que você destrava com sua própria influenciadora de IA:
+        O que você conquista com sua própria influenciadora de IA:
       </h2>
 
       {/* Image */}
