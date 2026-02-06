@@ -13,12 +13,12 @@ export function ScreenOferta() {
   ]
 
   const deliverables = [
-    "Treinamento completo, rápido e prático, com técnicas avançadas e zero enrolação, tudo direto ao ponto",
-    "Acesso às nossas IAs que criam prompts profissionais para agilizar seu trabalho",
-    "Material de apoio completo, com prompts prontos para você copiar e colar",
-    "Acesso a templates de vídeos virais para replicar em poucos cliques",
-    "Mini curso bônus de edição rápida para deixar seus vídeos mais profissionais",
-    "Treinamento bônus para criar roteiros virais usando IA em segundos"
+    "Treinamento completo: Crie sua Influenciadora de IA do zero",
+    "Estratégias validadas para crescer seu perfil no Instagram",
+    "Domine o UGC: Crie vídeos que vendem no TikTok Shop e Shopee",
+    "Receba em Dólar: Feche parcerias de UGC com marcas gringas",
+    "Monetização: Todas as formas de lucrar com seu perfil",
+    "Arsenal de Prompts Exclusivo para gerar fotos ultra-realistas"
   ]
 
   return (
