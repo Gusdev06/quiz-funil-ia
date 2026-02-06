@@ -44,7 +44,7 @@ export function ScreenProvaResultado({ onNext }: ScreenProvaResultadoProps) {
       {/* Image */}
       <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
         <Image
-          src="/images/IMG_2824.jpeg"
+          src="https://i.imgur.com/faYfBOI.jpeg"
           alt="Prova de resultado"
           width={400}
           height={400}

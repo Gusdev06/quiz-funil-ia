@@ -68,7 +68,7 @@ export function ScreenOferta() {
       {/* Image */}
       <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700">
         <Image
-          src="/images/exame.jpeg"
+          src="https://i.imgur.com/gKuwTmT.jpeg"
           alt="Conteúdo do treinamento"
           width={400}
           height={400}

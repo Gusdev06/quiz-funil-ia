@@ -24,7 +24,7 @@ export function ScreenRevelacao({ onNext }: ScreenRevelacaoProps) {
         {/* Image A */}
         <div className="relative flex-1 aspect-[3/4] rounded-xl overflow-hidden">
           <Image
-            src="/images/hf-20260131-145118-6209704c-ecc2-4119-88fe-b3e640280bbb.png"
+            src="https://i.imgur.com/RfNcqjL.jpegg"
             alt="IA A"
             fill
             className="object-cover"
@@ -42,7 +42,7 @@ export function ScreenRevelacao({ onNext }: ScreenRevelacaoProps) {
         {/* Image B */}
         <div className="relative flex-1 aspect-[3/4] rounded-xl overflow-hidden">
           <Image
-            src="/images/hf-20260131-171222-20e11584-8072-45df-bdc9.jpeg"
+            src="https://i.imgur.com/7dknHb8.jpeg"
             alt="IA B"
             fill
             className="object-cover"
@@ -75,7 +75,7 @@ export function ScreenRevelacao({ onNext }: ScreenRevelacaoProps) {
 
       <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
         <Image
-          src="/images/luis.png"
+          src="https://i.imgur.com/n9Gh4Yu.jpeg"
           alt="Luis"
           width={400}
           height={400}

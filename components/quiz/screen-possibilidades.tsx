@@ -38,7 +38,7 @@ export function ScreenPossibilidades({ onNext }: ScreenPossibilidadesProps) {
       {/* Image */}
       <div className="w-full relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
         <Image
-          src="/images/aviao.png"
+          src="https://i.imgur.com/fbtFFh6.jpeg"
           alt="Liberdade e possibilidades"
           width={400}
           height={400}

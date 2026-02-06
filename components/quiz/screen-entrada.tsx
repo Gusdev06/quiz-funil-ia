@@ -56,7 +56,7 @@ export function ScreenEntrada({ onNext }: ScreenEntradaProps) {
       {/* VSL Video */}
       <div className="w-full max-w-[400px] mb-8">
         <img
-          src="/images/hf_20260206_041610_e3d99106-b917-4061-8ce6-24f1caa9fae1.png"
+          src="https://i.imgur.com/NL8TTSw.jpeg"
           alt="Banner"
           className="w-full mb-4"
         />

@@ -39,7 +39,7 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
               }`}
           >
             <Image
-              src="/images/hf-20260131-145118-6209704c-ecc2-4119-88fe-b3e640280bbb.png"
+              src="https://i.imgur.com/RfNcqjL.jpeg"
               alt="Pessoa A"
               fill
               className="object-cover"
@@ -50,8 +50,8 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
             </div>
             {/* Hover border */}
             <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${hoveredImage === "A"
-                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
-                : "ring-1 ring-white/10"
+              ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
+              : "ring-1 ring-white/10"
               }`} />
           </button>
 
@@ -64,7 +64,7 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
               }`}
           >
             <Image
-              src="/images/hf-20260131-171222-20e11584-8072-45df-bdc9.jpeg"
+              src="https://i.imgur.com/7dknHb8.jpeg"
               alt="Pessoa B"
               fill
               className="object-cover"
@@ -75,8 +75,8 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
             </div>
             {/* Hover border */}
             <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${hoveredImage === "B"
-                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
-                : "ring-1 ring-white/10"
+              ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
+              : "ring-1 ring-white/10"
               }`} />
           </button>
         </div>
