@@ -43,7 +43,7 @@ export function ScreenDecisao({ onNext }: ScreenDecisaoProps) {
             <div className="w-6 h-6 rounded-full border border-[#00FF88]/50 flex items-center justify-center shrink-0">
               <Check className="w-4 h-4 text-[#00FF88]" strokeWidth={2} />
             </div>
-            
+
             {/* Text */}
             <p className="text-white text-[15px]">{objection}</p>
           </div>

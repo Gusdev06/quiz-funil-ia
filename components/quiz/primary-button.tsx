@@ -13,9 +13,9 @@ interface PrimaryButtonProps {
   animated?: boolean
 }
 
-export function PrimaryButton({ 
-  children, 
-  onClick, 
+export function PrimaryButton({
+  children,
+  onClick,
   className,
   href,
   large = false,
@@ -26,8 +26,8 @@ export function PrimaryButton({
     "gradient-bg text-[#0A0A0B] font-semibold",
     "rounded-[14px] transition-all duration-300",
     "hover:scale-[1.02] active:scale-[0.98]",
-    "shadow-[0_4px_20px_rgba(0,255,136,0.25)]",
-    "hover:shadow-[0_4px_30px_rgba(0,255,136,0.4)]",
+    "shadow-[0_4px_20px_rgba(217,255,2,0.25)]",
+    "hover:shadow-[0_4px_30px_rgba(217,255,2,0.4)]",
     large ? "py-[22px] px-10 text-base" : "py-[18px] px-8 text-[15px]",
     animated && "animate-pulse-glow",
     className

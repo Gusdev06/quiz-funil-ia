@@ -57,7 +57,7 @@ export function ScreenOferta() {
       {/* Badge */}
       <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#00FF88]/20 to-[#00D4FF]/20 border border-[#00FF88]/30 mb-4">
         <span className="text-[13px] font-bold text-[#00FF88] uppercase tracking-[0.12em]">
-          🎁 Acesso Imediato e Vitalício
+          🚀 Grupo VIP de Lançamento
         </span>
       </div>
 
@@ -100,37 +100,39 @@ export function ScreenOferta() {
 
         <div className="relative">
           {/* Original price */}
-          <span className="text-[#8A8A8E] text-lg line-through">R$782</span>
+          <span className="text-[#8A8A8E] text-lg line-through">R$297</span>
 
           {/* Launch label */}
-          <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-[#00FF88]/15 my-4">
+          {/* <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-[#00FF88]/15 my-4">
             <span className="text-[11px] font-semibold text-[#00FF88] uppercase tracking-[0.15em]">
-              Oferta de Lançamento
+              Condição Exclusiva no Grupo
             </span>
-          </div>
+          </div> */}
 
           {/* Final price */}
-          <div className="flex items-start justify-center mb-2">
-            <span className="text-white text-2xl font-medium mt-4">R$</span>
-            <span className="font-mono text-[64px] font-bold gradient-text leading-none">27</span>
-            <span className="text-white text-2xl font-medium mt-4">,99</span>
+          <div className="flex flex-col items-center justify-center mb-4">
+            <div className="flex items-end gap-2 leading-none">
+              <span className="text-white text-xl mb-4 font-medium">10x de</span>
+              <span className="font-mono text-[56px] md:text-[64px] font-bold gradient-text">R$9,70</span>
+            </div>
+            <span className="text-[#8A8A8E] text-sm font-medium">ou R$ 97,00 à vista</span>
           </div>
 
           {/* Payment info */}
           <p className="text-[#8A8A8E] text-sm">
-            Pagamento único. Acesso vitalício.
+            Oferta única para membros do grupo VIP.
           </p>
         </div>
       </div>
 
       {/* CTA Button */}
       <PrimaryButton
-        href="https://cakto.com.br/seu-link-aqui"
+        href="https://chat.whatsapp.com/LJHlfPgZ1Qx6cLJZuRXhpi"
         large
         animated
         className="mb-6"
       >
-        <span>Acessar o Método Agora</span>
+        <span>Entrar no Grupo VIP</span>
         <Zap className="w-5 h-5" />
       </PrimaryButton>
 
@@ -141,9 +143,9 @@ export function ScreenOferta() {
             <Shield className="w-5 h-5 text-[#00FF88]" />
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-1">Garantia de 7 dias</h4>
+            <h4 className="text-white font-semibold mb-1">Garantia de Lançamento</h4>
             <p className="text-[#8A8A8E] text-sm leading-relaxed">
-              Acesse tudo, teste o método. Se não fizer sentido pra você, devolvo 100% do valor. Sem perguntas, sem burocracia.
+              Garanta sua vaga com desconto. Se decidir não comprar no dia, você pode sair do grupo a qualquer momento.
             </p>
           </div>
         </div>

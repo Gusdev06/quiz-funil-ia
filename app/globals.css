@@ -5,39 +5,111 @@
 
 :root {
   /* Futuristic Dark Theme */
-  --background: #0A0A0B; /* User's value */
-  --background-secondary: #111113; /* User's value */
-  --foreground: #FFFFFF; /* User's value */
-  --foreground-muted: #8A8A8E; /* User's value */
-  
+  --background: #0A0A0B;
+  /* User's value */
+  --background-secondary: #111113;
+  /* User's value */
+  --foreground: #FFFFFF;
+  /* User's value */
+  --foreground-muted: #8A8A8E;
+  /* User's value */
+
   /* Neon Accents */
-  --accent-primary: #00FF88; /* User's value */
-  --accent-secondary: #00D4FF; /* User's value */
-  
+  --accent-primary: #00FF88;
+  /* User's value */
+  /* Neon Accents */
+  --accent-primary: #00FF88;
+  /* User's value */
+  --accent-secondary: #d9ff02;
+  /* User's value */
+
   /* Glass & Borders */
-  --glass: rgba(255, 255, 255, 0.05); /* User's value */
-  --glass-border: rgba(255, 255, 255, 0.1); /* User's value */
-  --glass-border-subtle: rgba(255, 255, 255, 0.08); /* User's value */
-  
+  --glass: rgba(255, 255, 255, 0.05);
+  /* User's value */
+  --glass-border: rgba(255, 255, 255, 0.1);
+  /* User's value */
+  --glass-border-subtle: rgba(255, 255, 255, 0.08);
+  /* User's value */
+
   /* Legacy tokens for compatibility (User's values take precedence for existing tokens) */
-  --card: #111113; /* User's value */
-  --card-foreground: #FFFFFF; /* User's value */
-  --popover: #111113; /* User's value */
-  --popover-foreground: #FFFFFF; /* User's value */
-  --primary: #00FF88; /* User's value */
-  --primary-foreground: #0A0A0B; /* User's value */
-  --secondary: #111113; /* User's value */
-  --secondary-foreground: #FFFFFF; /* User's value */
-  --muted: #111113; /* User's value */
-  --muted-foreground: #8A8A8E; /* User's value */
-  --accent: #00D4FF; /* User's value */
-  --accent-foreground: #0A0A0B; /* User's value */
-  --destructive: #FF4444; /* User's value */
-  --destructive-foreground: #FFFFFF; /* User's value */
-  --border: rgba(255, 255, 255, 0.1); /* User's value */
-  --input: rgba(255, 255, 255, 0.1); /* User's value */
-  --ring: #00FF88; /* User's value */
-  --radius: 0.875rem; /* User's value */
+  --card: #111113;
+  /* User's value */
+  --card-foreground: #FFFFFF;
+  /* User's value */
+  --popover: #111113;
+  /* User's value */
+  --popover-foreground: #FFFFFF;
+  /* User's value */
+  --primary: #00FF88;
+  /* User's value */
+  --primary-foreground: #0A0A0B;
+  /* User's value */
+  --secondary: #111113;
+  /* User's value */
+  --secondary-foreground: #FFFFFF;
+  /* User's value */
+  --muted: #111113;
+  /* User's value */
+  --muted-foreground: #8A8A8E;
+  /* User's value */
+  --accent: #d9ff02;
+  /* User's value */
+  --accent-foreground: #0A0A0B;
+  /* ... (existing content preserved implicitly between chunks if I were doing multi-replace, but here I'm replacing a block) ... */
+  /* NOTE: The above matches the start of the file structure. I will target the specific blocks or just replace the variable section and the utility section. 
+   Actually, replace_file_content is better for contiguous blocks. The variables are at lines 18-53 approx, and utilities at 199-289. 
+   I should separate this into two actions or just use multi_replace if I want to be precise, but since I can only do single contiguous with replace_file_content, I'll update the variables first. 
+   Wait, the user wants me to do IT ALL. 
+   I will use replace_file_content for the variables first.
+*/
+  --accent-secondary: #d9ff02;
+  /* User's value */
+
+  /* Glass & Borders */
+  --glass: rgba(255, 255, 255, 0.05);
+  /* User's value */
+  --glass-border: rgba(255, 255, 255, 0.1);
+  /* User's value */
+  --glass-border-subtle: rgba(255, 255, 255, 0.08);
+  /* User's value */
+
+  /* Legacy tokens for compatibility (User's values take precedence for existing tokens) */
+  --card: #111113;
+  /* User's value */
+  --card-foreground: #FFFFFF;
+  /* User's value */
+  --popover: #111113;
+  /* User's value */
+  --popover-foreground: #FFFFFF;
+  /* User's value */
+  --primary: #d9ff02;
+  /* User's value */
+  --primary-foreground: #0A0A0B;
+  /* User's value */
+  --secondary: #111113;
+  /* User's value */
+  --secondary-foreground: #FFFFFF;
+  /* User's value */
+  --muted: #111113;
+  /* User's value */
+  --muted-foreground: #8A8A8E;
+  /* User's value */
+  --accent: #d9ff02;
+  /* User's value */
+  --accent-foreground: #0A0A0B;
+  /* User's value */
+  --destructive: #FF4444;
+  /* User's value */
+  --destructive-foreground: #FFFFFF;
+  /* User's value */
+  --border: rgba(255, 255, 255, 0.1);
+  /* User's value */
+  --input: rgba(255, 255, 255, 0.1);
+  /* User's value */
+  --ring: #d9ff02;
+  /* User's value */
+  --radius: 0.875rem;
+  /* User's value */
 
   /* Shadcn/UI additional tokens (merged) */
   --chart-1: oklch(0.646 0.222 41.116);
@@ -93,20 +165,31 @@
 }
 
 @theme inline {
-  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif; /* User's value */
-  --font-body: 'Inter', 'Inter Fallback', system-ui, sans-serif; /* User's value */
-  --font-heading: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif; /* User's value */
-  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace; /* User's value */
-  
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  /* User's value */
+  --font-body: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  /* User's value */
+  --font-heading: 'Space Grotesk', 'Space Grotesk Fallback', system-ui, sans-serif;
+  /* User's value */
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+  /* User's value */
+
   --color-background: var(--background);
-  --color-background-secondary: var(--background-secondary); /* User's value */
+  --color-background-secondary: var(--background-secondary);
+  /* User's value */
   --color-foreground: var(--foreground);
-  --color-foreground-muted: var(--foreground-muted); /* User's value */
-  --color-accent-primary: var(--accent-primary); /* User's value */
-  --color-accent-secondary: var(--accent-secondary); /* User's value */
-  --color-glass: var(--glass); /* User's value */
-  --color-glass-border: var(--glass-border); /* User's value */
-  --color-glass-border-subtle: var(--glass-border-subtle); /* User's value */
+  --color-foreground-muted: var(--foreground-muted);
+  /* User's value */
+  --color-accent-primary: var(--accent-primary);
+  /* User's value */
+  --color-accent-secondary: var(--accent-secondary);
+  /* User's value */
+  --color-glass: var(--glass);
+  /* User's value */
+  --color-glass-border: var(--glass-border);
+  /* User's value */
+  --color-glass-border-subtle: var(--glass-border-subtle);
+  /* User's value */
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
   --color-popover: var(--popover);
@@ -149,6 +232,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     /* Removed explicit background-color: #0A0A0B; as @apply bg-background covers it. */
@@ -158,38 +242,33 @@
 /* Custom utilities for the quiz funnel (preserved from original) */
 @layer utilities {
   .gradient-text {
-    background: linear-gradient(135deg, #00FF88 0%, #00D4FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--accent);
   }
-  
+
   .gradient-border {
     position: relative;
-    background: linear-gradient(#111113, #111113) padding-box,
-                linear-gradient(135deg, #00FF88 0%, #00D4FF 100%) border-box;
-    border: 1px solid transparent;
+    border: 1px solid var(--accent);
   }
-  
+
   .gradient-bg {
-    background: linear-gradient(135deg, #00FF88 0%, #00D4FF 100%);
+    background: var(--accent);
   }
-  
+
   .glow-primary {
-    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 30px rgba(217, 255, 2, 0.3);
   }
-  
+
   .glow-primary-intense {
-    box-shadow: 0 0 40px rgba(0, 255, 136, 0.4);
+    box-shadow: 0 0 40px rgba(217, 255, 2, 0.4);
   }
-  
+
   .glass {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .glass-strong {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(30px);
@@ -200,56 +279,47 @@
   .animate-pulse-glow {
     animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  
+
   @keyframes pulse-glow {
-    0%, 100% {
-      box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(217, 255, 2, 0.3);
       transform: scale(1);
     }
+
     50% {
-      box-shadow: 0 0 35px rgba(0, 255, 136, 0.5);
+      box-shadow: 0 0 35px rgba(217, 255, 2, 0.5);
       transform: scale(1.02);
     }
   }
-  
+
   .animate-bounce-subtle {
     animation: bounce-subtle 2s ease-in-out infinite;
   }
-  
+
   @keyframes bounce-subtle {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-6px);
     }
   }
-  
-  .animate-gradient-shift {
-    background-size: 200% 200%;
-    animation: gradient-shift 3s ease infinite;
-  }
-  
-  @keyframes gradient-shift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+
+  /* Animation removed */
 
   .font-heading {
     font-family: var(--font-heading);
   }
-  
+
   .font-body {
     font-family: var(--font-body);
   }
-  
+
   .font-mono {
     font-family: var(--font-mono);
   }

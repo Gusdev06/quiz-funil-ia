@@ -18,18 +18,18 @@ export function ProgressBar({ current, total }: ProgressBarProps) {
           style={{ width: `${progress}%` }}
         >
           {/* Glow effect */}
-          <div 
+          <div
             className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-[#00FF88]/50 to-transparent"
           />
         </div>
-        
+
         {/* Bottom glow line */}
-        <div 
+        <div
           className="absolute bottom-0 left-0 h-[2px] gradient-bg blur-sm transition-all duration-600 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
-      
+
       {/* Progress indicator */}
       <div className="absolute top-3 right-4 text-xs font-mono text-[#8A8A8E]">
         {current}/{total}

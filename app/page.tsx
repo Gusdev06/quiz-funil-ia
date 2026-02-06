@@ -17,12 +17,12 @@ export default function QuizFunil() {
   const [isTransitioning, setIsTransitioning] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const totalScreens = 8
+  const totalScreens = 7
 
   const goToNext = () => {
     if (isTransitioning) return
     setIsTransitioning(true)
-    
+
     setTimeout(() => {
       setCurrentScreen((prev) => Math.min(prev + 1, totalScreens))
       setIsTransitioning(false)
@@ -33,7 +33,7 @@ export default function QuizFunil() {
   const goBack = () => {
     if (isTransitioning || currentScreen === 1) return
     setIsTransitioning(true)
-    
+
     setTimeout(() => {
       setCurrentScreen((prev) => Math.max(prev - 1, 1))
       setIsTransitioning(false)
@@ -47,7 +47,7 @@ export default function QuizFunil() {
 
   const renderScreen = () => {
     const screenProps = { onNext: goToNext }
-    
+
     switch (currentScreen) {
       case 1:
         return <ScreenEntrada {...screenProps} />
@@ -57,13 +57,12 @@ export default function QuizFunil() {
         return <ScreenRevelacao {...screenProps} />
       case 4:
         return <ScreenProvaResultado {...screenProps} />
+      // ScreenMetricas removed (was 5)
       case 5:
-        return <ScreenMetricas {...screenProps} />
-      case 6:
         return <ScreenPossibilidades {...screenProps} />
-      case 7:
+      case 6:
         return <ScreenDecisao {...screenProps} />
-      case 8:
+      case 7:
         return <ScreenOferta />
       default:
         return <ScreenEntrada {...screenProps} />
@@ -73,7 +72,7 @@ export default function QuizFunil() {
   return (
     <main className="min-h-screen bg-[#0A0A0B] relative overflow-hidden">
       {/* Subtle grid background */}
-      <div 
+      <div
         className="fixed inset-0 pointer-events-none opacity-[0.03]"
         style={{
           backgroundImage: `
@@ -83,7 +82,7 @@ export default function QuizFunil() {
           backgroundSize: '60px 60px'
         }}
       />
-      
+
       {/* Gradient orb effects */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#00FF88] opacity-[0.03] rounded-full blur-[150px] pointer-events-none" />
       <div className="fixed bottom-0 right-0 w-[400px] h-[400px] bg-[#00D4FF] opacity-[0.02] rounded-full blur-[120px] pointer-events-none" />
@@ -95,16 +94,15 @@ export default function QuizFunil() {
       {currentScreen > 1 && <BackButton onClick={goBack} />}
 
       {/* Main content */}
-      <div 
+      <div
         ref={containerRef}
         className="relative z-10 w-full max-w-[480px] mx-auto px-5 md:px-6 pt-16 pb-12"
       >
         <div
-          className={`transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-            isTransitioning 
-              ? "opacity-0 translate-y-5" 
-              : "opacity-100 translate-y-0"
-          }`}
+          className={`transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] ${isTransitioning
+            ? "opacity-0 translate-y-5"
+            : "opacity-100 translate-y-0"
+            }`}
         >
           {renderScreen()}
         </div>

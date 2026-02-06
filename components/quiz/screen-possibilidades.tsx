@@ -59,7 +59,7 @@ export function ScreenPossibilidades({ onNext }: ScreenPossibilidadesProps) {
             <div className="w-11 h-11 rounded-full gradient-border flex items-center justify-center shrink-0">
               {benefit.icon}
             </div>
-            
+
             {/* Text */}
             <p className="text-white text-[15px] leading-relaxed text-left">
               {benefit.text}

@@ -1,16 +1,16 @@
 "use client"
 
 import React from "react"
-
-import { Users, Handshake, Globe, DollarSign } from "lucide-react"
-import { PrimaryButton } from "./primary-button"
-import { useEffect, useState, useRef } from "react"
-import Image from "next/image"
+// import { Users, Handshake, Globe, DollarSign } from "lucide-react"
+// import { PrimaryButton } from "./primary-button"
+// import { useEffect, useState, useRef } from "react"
+// import Image from "next/image"
 
 interface ScreenMetricasProps {
   onNext: () => void
 }
 
+/*
 interface MetricCardProps {
   number: string
   label: string
@@ -82,8 +82,10 @@ function MetricCard({ number, label, icon, delay }: MetricCardProps) {
     </div>
   )
 }
+*/
 
 export function ScreenMetricas({ onNext }: ScreenMetricasProps) {
+  /*
   const metrics = [
     {
       number: "+5k",
@@ -113,7 +115,6 @@ export function ScreenMetricas({ onNext }: ScreenMetricasProps) {
 
   return (
     <div className="flex flex-col items-center text-center animate-in fade-in slide-in-from-bottom-4 duration-500">
-      {/* Title */}
       <h2 className="font-heading text-[28px] font-bold tracking-[-0.02em] mb-4 text-white">
         90 dias de Olivia em{" "}
         <span className="relative">
@@ -123,7 +124,6 @@ export function ScreenMetricas({ onNext }: ScreenMetricasProps) {
         .
       </h2>
 
-      {/* Image */}
       <div className="w-full aspect-[4/5] relative mb-8 rounded-2xl overflow-hidden glass animate-in fade-in zoom-in duration-700 delay-300">
         <Image
           src="/images/oculos.png"
@@ -134,22 +134,27 @@ export function ScreenMetricas({ onNext }: ScreenMetricasProps) {
         />
       </div>
 
-      {/* Metrics Grid */}
       <div className="w-full grid grid-cols-2 gap-3 mb-8">
         {metrics.map((metric, index) => (
           <MetricCard key={index} {...metric} />
         ))}
       </div>
 
-      {/* Quote */}
       <p className="text-white/70 italic text-base leading-relaxed mb-8 max-w-[340px]">
         Enquanto eu dormia, viajava ou só curtia a vida — ela trabalhava.
       </p>
 
-      {/* Button */}
       <PrimaryButton onClick={onNext}>
         Quero esses resultados
       </PrimaryButton>
     </div>
   )
+  */
+
+  // Immediately call onNext or just return null to skip visually?
+  // Since the user said "won't use it for now", returning null effectively hides it.
+  // If this screen is part of a flow controlled by a parent index, it might still "show" (blank).
+  // I will add a temporary button to skip in case it's needed for dev flow, or just return null.
+  // Given "comment this page", returning null is the direct translation.
+  return null;
 }

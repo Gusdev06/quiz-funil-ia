@@ -35,9 +35,8 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
             onClick={handleSelect}
             onMouseEnter={() => setHoveredImage("A")}
             onMouseLeave={() => setHoveredImage(null)}
-            className={`relative flex-1 aspect-[3/4] rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${
-              hoveredImage === "A" ? "scale-[1.03]" : ""
-            }`}
+            className={`relative flex-1 aspect-[3/4] rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${hoveredImage === "A" ? "scale-[1.03]" : ""
+              }`}
           >
             <Image
               src="/images/hf-20260131-145118-6209704c-ecc2-4119-88fe-b3e640280bbb.png"
@@ -50,11 +49,10 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
               <span className="text-white text-sm font-semibold">A</span>
             </div>
             {/* Hover border */}
-            <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${
-              hoveredImage === "A" 
-                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]" 
+            <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${hoveredImage === "A"
+                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
                 : "ring-1 ring-white/10"
-            }`} />
+              }`} />
           </button>
 
           {/* Image B */}
@@ -62,9 +60,8 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
             onClick={handleSelect}
             onMouseEnter={() => setHoveredImage("B")}
             onMouseLeave={() => setHoveredImage(null)}
-            className={`relative flex-1 aspect-[3/4] rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${
-              hoveredImage === "B" ? "scale-[1.03]" : ""
-            }`}
+            className={`relative flex-1 aspect-[3/4] rounded-xl overflow-hidden cursor-pointer transition-all duration-300 ${hoveredImage === "B" ? "scale-[1.03]" : ""
+              }`}
           >
             <Image
               src="/images/hf-20260131-171222-20e11584-8072-45df-bdc9.jpeg"
@@ -77,11 +74,10 @@ export function ScreenDesafio({ onNext }: ScreenDesafioProps) {
               <span className="text-white text-sm font-semibold">B</span>
             </div>
             {/* Hover border */}
-            <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${
-              hoveredImage === "B" 
-                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]" 
+            <div className={`absolute inset-0 rounded-xl transition-all duration-300 ${hoveredImage === "B"
+                ? "ring-2 ring-[#00FF88] shadow-[0_0_20px_rgba(0,255,136,0.3)]"
                 : "ring-1 ring-white/10"
-            }`} />
+              }`} />
           </button>
         </div>
 
