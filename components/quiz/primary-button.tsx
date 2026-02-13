@@ -25,23 +25,34 @@ export function PrimaryButton({
 
   useEffect(() => {
     if (href) {
-      // Captura os parâmetros UTM da URL atual
-      const urlParams = new URLSearchParams(window.location.search)
-      const utmParams = new URLSearchParams()
+      try {
+        // Parse da URL do href
+        const url = new URL(href)
+        const hrefParams = new URLSearchParams(url.search)
 
-      // Extrai todos os parâmetros UTM
-      const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
-      utmKeys.forEach(key => {
-        const value = urlParams.get(key)
-        if (value) {
-          utmParams.append(key, value)
-        }
-      })
+        // Captura os parâmetros UTM da URL atual
+        const currentUrlParams = new URLSearchParams(window.location.search)
 
-      // Se houver parâmetros UTM, adiciona ao href
-      if (utmParams.toString()) {
-        const separator = href.includes('?') ? '&' : '?'
-        setFinalHref(`${href}${separator}${utmParams.toString()}`)
+        // Lista de parâmetros UTM
+        const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
+
+        // Mescla os parâmetros: parâmetros da URL atual têm prioridade
+        utmKeys.forEach(key => {
+          const currentValue = currentUrlParams.get(key)
+          if (currentValue) {
+            // Se existe na URL atual, sobrescreve o valor do href
+            hrefParams.set(key, currentValue)
+          }
+          // Se não existe na URL atual, mantém o valor do href (se houver)
+        })
+
+        // Reconstrói a URL com os parâmetros mesclados
+        url.search = hrefParams.toString()
+        setFinalHref(url.toString())
+      } catch (error) {
+        // Se houver erro no parse da URL, usa o href original
+        console.error('Erro ao processar URL:', error)
+        setFinalHref(href)
       }
     }
   }, [href])
