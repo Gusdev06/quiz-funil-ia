@@ -127,7 +127,7 @@ export function ScreenOferta() {
 
       {/* CTA Button */}
       <PrimaryButton
-        href="https://chat.whatsapp.com/LJHlfPgZ1Qx6cLJZuRXhpi"
+        href="https://chat.whatsapp.com/I5ScgOIaF3FHCgfw7oOcos"
         large
         animated
         className="mb-6"
