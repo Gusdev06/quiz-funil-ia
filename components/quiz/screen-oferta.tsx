@@ -127,7 +127,7 @@ export function ScreenOferta() {
 
       {/* CTA Button */}
       <PrimaryButton
-        href="https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm"
+        href="https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm?utm_source=instagram&utm_medium=manychat&utm_campaign=lancamento"
         large
         animated
         className="mb-6"
