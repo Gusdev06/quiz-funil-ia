@@ -60,6 +60,14 @@ export default function RootLayout({
             __html: `!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);`
           }}
         />
+        {/* Utmify Script - UTM Tracking */}
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        />
         {/* VTurb Preloads */}
         <link rel="preload" href="https://scripts.converteai.net/8961d838-aff2-4dce-9b39-e84022d332ce/players/697f7ab5fa239aff03b3c0bd/v4/player.js" as="script" />
         <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script" />

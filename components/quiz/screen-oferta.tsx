@@ -57,7 +57,7 @@ export function ScreenOferta() {
       {/* Badge */}
       <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#00FF88]/20 to-[#00D4FF]/20 border border-[#00FF88]/30 mb-4">
         <span className="text-[13px] font-bold text-[#00FF88] uppercase tracking-[0.12em]">
-          🚀 Grupo VIP de Lançamento
+          🚀 Oferta Exclusiva de Lançamento
         </span>
       </div>
 
@@ -120,19 +120,19 @@ export function ScreenOferta() {
 
           {/* Payment info */}
           <p className="text-[#8A8A8E] text-sm">
-            Oferta única para membros do grupo VIP.
+            Oferta exclusiva de lançamento por tempo limitado.
           </p>
         </div>
       </div>
 
       {/* CTA Button */}
       <PrimaryButton
-        href="https://chat.whatsapp.com/I5ScgOIaF3FHCgfw7oOcos"
+        href="https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm"
         large
         animated
         className="mb-6"
       >
-        <span>Entrar no Grupo VIP</span>
+        <span>Garantir Minha Vaga Agora</span>
         <Zap className="w-5 h-5" />
       </PrimaryButton>
 
@@ -143,9 +143,9 @@ export function ScreenOferta() {
             <Shield className="w-5 h-5 text-[#00FF88]" />
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-1">Garantia de Lançamento</h4>
+            <h4 className="text-white font-semibold mb-1">Garantia de Satisfação</h4>
             <p className="text-[#8A8A8E] text-sm leading-relaxed">
-              Garanta sua vaga com desconto. Se decidir não comprar no dia, você pode sair do grupo a qualquer momento.
+              Compra 100% segura com garantia de satisfação. Se não gostar, devolvemos seu dinheiro em até 7 dias.
             </p>
           </div>
         </div>
