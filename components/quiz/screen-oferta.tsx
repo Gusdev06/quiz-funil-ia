@@ -132,7 +132,7 @@ export function ScreenOferta() {
         animated
         className="mb-6"
       >
-        <span>Que</span>
+        <span>DESBLOQUEAR MEU ACESSO AGORA!!</span>
         <Zap className="w-5 h-5" />
       </PrimaryButton>
 
@@ -185,7 +185,7 @@ export function ScreenOferta() {
             <Shield className="w-5 h-5 text-[#00FF88]" />
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-1">DESBLOQUEAR MEU ACESSO AGORA!!</h4>
+            <h4 className="text-white font-semibold mb-1">Garantia de Satisfação</h4>
             <p className="text-[#8A8A8E] text-sm leading-relaxed">
               Compra 100% segura com garantia de satisfação. Se não gostar, devolvemos seu dinheiro em até 7 dias.
             </p>
