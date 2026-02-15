@@ -41,16 +41,13 @@ export function ScreenEntrada({ onNext }: ScreenEntradaProps) {
       </div>
 
       {/* Main Title */}
-      <h1 className="font-heading text-[28px] md:text-[36px] font-bold leading-tight tracking-[-0.02em] mb-4 text-balance max-w-[500px]">
-        Daqui a 1 ano, todo mundo vai usar{" "}
-        <span className="gradient-text">IA</span>{" "}
-        pra criar conteúdo. A diferença é{" "}
-        <span className="gradient-text">quem começou hoje</span>.
+      <h1 className="font-heading text-[22px] md:text-[36px] font-bold leading-tight tracking-[-0.02em] mb-6 text-balance max-w-[600px] px-4">
+        Crie Uma <span className="gradient-text">Influencer de IA</span> Que Trabalha 24h Por Você — Sem Você Aparecer, Gravar ou Se Preocupar Com Nada
       </h1>
 
       {/* Subtitle */}
-      <p className="text-[#8A8A8E] text-base leading-relaxed mb-8 max-w-[400px]">
-        Crie uma influenciadora de IA que vende por você — sem aparecer, sem gravar, sem complicação.
+      <p className="text-[#8A8A8E] text-[14px] md:text-base leading-relaxed mb-8 max-w-[500px] px-4">
+        O método completo para criar influencers virtuais hiper-realistas e faturar vendendo produtos como afiliado, fechando parcerias com marcas ou oferecendo esse serviço para empresas.
       </p>
 
       {/* VSL Video */}

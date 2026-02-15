@@ -132,18 +132,60 @@ export function ScreenOferta() {
         animated
         className="mb-6"
       >
-        <span>Garantir Minha Vaga Agora</span>
+        <span>Que</span>
         <Zap className="w-5 h-5" />
       </PrimaryButton>
 
-      {/* Section 4 - Guarantee */}
+      {/* Section 4 - Testimonials */}
+      <div className="w-full mb-8 relative">
+        <h3 className="font-heading text-2xl font-bold text-white mb-6 text-center">
+          Veja o que os alunos estão dizendo
+        </h3>
+
+        <div className="space-y-4">
+          {/* Testimonial 1 */}
+          <div className="w-full relative animate-in fade-in zoom-in duration-700">
+            <Image
+              src="https://i.imgur.com/zRKXm61.jpeg"
+              alt="Depoimento 1"
+              width={400}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="w-full relative animate-in fade-in zoom-in duration-700 delay-100">
+            <Image
+              src="https://i.imgur.com/Qew7LLK.jpeg"
+              alt="Depoimento 2"
+              width={400}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Testimonial 3 */}
+          <div className="w-full relative animate-in fade-in zoom-in duration-700 delay-200">
+            <Image
+              src="https://i.imgur.com/tM1Lbxl.jpeg"
+              alt="Depoimento 3"
+              width={400}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Section 5 - Guarantee */}
       <div className="w-full glass rounded-xl p-4 mb-8 relative">
         <div className="flex items-start gap-3 text-left">
           <div className="w-10 h-10 rounded-full bg-[#00FF88]/10 flex items-center justify-center shrink-0">
             <Shield className="w-5 h-5 text-[#00FF88]" />
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-1">Garantia de Satisfação</h4>
+            <h4 className="text-white font-semibold mb-1">DESBLOQUEAR MEU ACESSO AGORA!!</h4>
             <p className="text-[#8A8A8E] text-sm leading-relaxed">
               Compra 100% segura com garantia de satisfação. Se não gostar, devolvemos seu dinheiro em até 7 dias.
             </p>
@@ -151,7 +193,7 @@ export function ScreenOferta() {
         </div>
       </div>
 
-      {/* Section 5 - FAQ */}
+      {/* Section 6 - FAQ */}
       <div className="w-full mb-8 relative">
         <h3 className="font-heading text-2xl font-bold text-white mb-6 text-center">
           Dúvidas Frequentes

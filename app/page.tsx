@@ -5,6 +5,8 @@ import { ScreenEntrada } from "@/components/quiz/screen-entrada"
 import { ScreenDesafio } from "@/components/quiz/screen-desafio"
 import { ScreenRevelacao } from "@/components/quiz/screen-revelacao"
 import { ScreenProvaResultado } from "@/components/quiz/screen-prova-resultado"
+import { ScreenUgcDemo } from "@/components/quiz/screen-ugc-demo"
+import { ScreenVideosNegocios } from "@/components/quiz/screen-videos-negocios"
 import { ScreenMetricas } from "@/components/quiz/screen-metricas"
 import { ScreenPossibilidades } from "@/components/quiz/screen-possibilidades"
 import { ScreenDecisao } from "@/components/quiz/screen-decisao"
@@ -17,7 +19,7 @@ export default function QuizFunil() {
   const [isTransitioning, setIsTransitioning] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const totalScreens = 7
+  const totalScreens = 9
 
   const goToNext = () => {
     if (isTransitioning) return
@@ -57,12 +59,15 @@ export default function QuizFunil() {
         return <ScreenRevelacao {...screenProps} />
       case 4:
         return <ScreenProvaResultado {...screenProps} />
-      // ScreenMetricas removed (was 5)
       case 5:
-        return <ScreenPossibilidades {...screenProps} />
+        return <ScreenUgcDemo {...screenProps} />
       case 6:
-        return <ScreenDecisao {...screenProps} />
+        return <ScreenVideosNegocios {...screenProps} />
       case 7:
+        return <ScreenPossibilidades {...screenProps} />
+      case 8:
+        return <ScreenDecisao {...screenProps} />
+      case 9:
         return <ScreenOferta />
       default:
         return <ScreenEntrada {...screenProps} />
