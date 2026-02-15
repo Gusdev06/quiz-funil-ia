@@ -3,8 +3,32 @@
 import { Check, Shield, Lock, Zap } from "lucide-react"
 import { PrimaryButton } from "./primary-button"
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 export function ScreenOferta() {
+  const [checkoutUrl, setCheckoutUrl] = useState("https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm")
+
+  useEffect(() => {
+    // Captura os parâmetros UTM da URL atual
+    const params = new URLSearchParams(window.location.search)
+    const utmSource = params.get("utm_source") || "organic"
+    const utmMedium = params.get("utm_medium") || "direct"
+    const utmCampaign = params.get("utm_campaign") || "lancamento"
+    const utmContent = params.get("utm_content") || ""
+    const utmTerm = params.get("utm_term") || ""
+
+    // Constrói a URL do checkout com os UTMs capturados
+    const checkoutParams = new URLSearchParams({
+      utm_source: utmSource,
+      utm_medium: utmMedium,
+      utm_campaign: utmCampaign,
+      ...(utmContent && { utm_content: utmContent }),
+      ...(utmTerm && { utm_term: utmTerm })
+    })
+
+    setCheckoutUrl(`https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm?${checkoutParams.toString()}`)
+  }, [])
+
   const comparison = [
     { item: "Contratar modelo profissional", price: "R$500" },
     { item: "Editor de vídeo freelancer", price: "R$300" },
@@ -127,7 +151,7 @@ export function ScreenOferta() {
 
       {/* CTA Button */}
       <PrimaryButton
-        href="https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm?utm_source=instagram&utm_medium=manychat&utm_campaign=lancamento"
+        href={checkoutUrl}
         large
         animated
         className="mb-6"

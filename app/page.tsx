@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import Script from "next/script"
 import { ScreenEntrada } from "@/components/quiz/screen-entrada"
 import { ScreenDesafio } from "@/components/quiz/screen-desafio"
 import { ScreenRevelacao } from "@/components/quiz/screen-revelacao"
@@ -78,18 +79,35 @@ export default function QuizFunil() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0A0A0B] relative overflow-hidden">
-      {/* Subtle grid background */}
-      <div
-        className="fixed inset-0 pointer-events-none opacity-[0.03]"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px'
+    <>
+      {/* Utmify Pixel */}
+      <Script
+        id="utmify-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.pixelId = "699152db571e6bfb85dda290";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `
         }}
       />
+
+      <main className="min-h-screen bg-[#0A0A0B] relative overflow-hidden">
+        {/* Subtle grid background */}
+        <div
+          className="fixed inset-0 pointer-events-none opacity-[0.03]"
+          style={{
+            backgroundImage: `
+              linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '60px 60px'
+          }}
+        />
 
       {/* Gradient orb effects */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#00FF88] opacity-[0.03] rounded-full blur-[150px] pointer-events-none" />
@@ -115,6 +133,7 @@ export default function QuizFunil() {
           {renderScreen()}
         </div>
       </div>
-    </main>
+      </main>
+    </>
   )
 }
