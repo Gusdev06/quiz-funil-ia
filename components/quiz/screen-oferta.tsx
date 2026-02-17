@@ -124,7 +124,7 @@ export function ScreenOferta() {
 
         <div className="relative">
           {/* Original price */}
-          <span className="text-[#8A8A8E] text-lg line-through">R$297</span>
+          <span className="text-[#8A8A8E] text-lg line-through">R$97</span>
 
           {/* Launch label */}
           {/* <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-[#00FF88]/15 my-4">
