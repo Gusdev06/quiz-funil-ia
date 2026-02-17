@@ -11,22 +11,21 @@ export function ScreenOferta() {
   useEffect(() => {
     // Captura os parâmetros UTM da URL atual
     const params = new URLSearchParams(window.location.search)
-    const utmSource = params.get("utm_source") || "organic"
-    const utmMedium = params.get("utm_medium") || "direct"
-    const utmCampaign = params.get("utm_campaign") || "lancamento"
-    const utmContent = params.get("utm_content") || ""
-    const utmTerm = params.get("utm_term") || ""
 
     // Constrói a URL do checkout com os UTMs capturados
-    const checkoutParams = new URLSearchParams({
-      utm_source: utmSource,
-      utm_medium: utmMedium,
-      utm_campaign: utmCampaign,
-      ...(utmContent && { utm_content: utmContent }),
-      ...(utmTerm && { utm_term: utmTerm })
+    const checkoutParams = new URLSearchParams()
+    const utmKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"]
+
+    utmKeys.forEach((key) => {
+      const value = params.get(key)
+      if (value) {
+        checkoutParams.set(key, value)
+      }
     })
 
-    setCheckoutUrl(`https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm?${checkoutParams.toString()}`)
+    if (checkoutParams.toString()) {
+      setCheckoutUrl(`https://pay.hub.la/6MfU0miJdwxDQBHQY3Sm?${checkoutParams.toString()}`)
+    }
   }, [])
 
   const comparison = [
@@ -157,7 +156,6 @@ export function ScreenOferta() {
         className="mb-6"
       >
         <span>DESBLOQUEAR MEU ACESSO AGORA!!</span>
-        <Zap className="w-5 h-5" />
       </PrimaryButton>
 
       {/* Section 4 - Testimonials */}
